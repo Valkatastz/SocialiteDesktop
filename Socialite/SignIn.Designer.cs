@@ -117,9 +117,9 @@
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.Location = new System.Drawing.Point(0, 500);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(525, 18);
+            this.label1.Size = new System.Drawing.Size(517, 18);
             this.label1.TabIndex = 8;
-            this.label1.Text = "© Socialite 2016 - DMU Team Development Under Graduate Final Year Project";
+            this.label1.Text = "© Socialite 2016 - DMU Team Development Undergraduate Final Year Project";
             // 
             // frmLogin
             // 
