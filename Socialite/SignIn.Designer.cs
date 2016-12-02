@@ -136,6 +136,7 @@
             this.Controls.Add(this.lblPassword);
             this.Controls.Add(this.lblEmail);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.SizableToolWindow;
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "frmLogin";
             this.Text = "Socialite";
             this.WindowState = System.Windows.Forms.FormWindowState.Maximized;

@@ -16,5 +16,17 @@ namespace Socialite
         {
             InitializeComponent();
         }
+
+        private void frmAccount_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void logOutToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            frmLogin logout = new frmLogin();
+            this.Close();
+            logout.Show();            
+        }
     }
 }

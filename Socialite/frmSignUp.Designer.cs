@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmSignUp));
             this.lblReg = new System.Windows.Forms.Label();
             this.lblUsername = new System.Windows.Forms.Label();
             this.lblPassword = new System.Windows.Forms.Label();
@@ -211,6 +212,7 @@
             this.Controls.Add(this.lblUsername);
             this.Controls.Add(this.lblReg);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.SizableToolWindow;
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "frmSignUp";
             this.Text = "Sign Up";
             this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
