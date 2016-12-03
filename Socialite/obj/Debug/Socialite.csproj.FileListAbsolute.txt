@@ -24,3 +24,6 @@ C:\TeamDev\Desktop\Socialite\obj\Debug\Socialite.frmAccount.resources
 C:\TeamDev\Desktop\Socialite\obj\Debug\Socialite.frmSignUp.resources
 C:\TeamDev\Desktop\Socialite\obj\Debug\Socialite.Properties.Resources.resources
 C:\TeamDev\Desktop\Socialite\obj\Debug\Socialite.csproj.GenerateResource.Cache
+C:\TeamDev\Desktop\Socialite\bin\Debug\MetroFramework.Design.dll
+C:\TeamDev\Desktop\Socialite\bin\Debug\MetroFramework.dll
+C:\TeamDev\Desktop\Socialite\bin\Debug\MetroFramework.Fonts.dll

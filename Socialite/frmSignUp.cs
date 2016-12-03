@@ -8,36 +8,15 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.Data.SqlClient;
-
+using MetroFramework.Forms;
 
 namespace Socialite
 {
-    public partial class frmSignUp : Form
+    public partial class frmSignUp : MetroForm
     {
         public frmSignUp()
         {
             InitializeComponent();
-        }
-
-        private void btnCreate_Click(object sender, EventArgs e)
-        {
-            frmLogin signed = new frmLogin();
-            SqlConnection account = new SqlConnection(@"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=C:\TeamDev\Socialite\Socialite\Socialite\SocialiteDB.mdf;Integrated Security=True;Connect Timeout=30");
-            account.Open();
-
-            if (lblCheck.ForeColor == System.Drawing.Color.Green && lblEmailCheck.ForeColor == System.Drawing.Color.Green)
-            {
-                SqlCommand add = new SqlCommand("Insert into Accounts(Username, Password, First_Name, Last_Name, Email) Values('" + txtUsername.Text + "', '" + txtPassword.Text + "' ,  '" + txtEmail.Text + "' , '" + txtFirstName.Text + "' , '" + txtLastName.Text + "')", account);
-                add.ExecuteNonQuery();
-                account.Close();
-                this.Hide();
-                signed.Show();
-            }
-            else
-            {
-                MessageBox.Show("Please, choose different Username or Email");
-            }
-
         }
 
         private void txtUsername_TextChanged(object sender, EventArgs e)
@@ -76,11 +55,36 @@ namespace Socialite
             }
         }
 
-        private void btnCancel_Click(object sender, EventArgs e)
+        private void frmSignUp_Load(object sender, EventArgs e)
         {
-            frmLogin login = new frmLogin();
-            login.Show();
+
+        }
+
+        private void btnCreate_Click_1(object sender, EventArgs e)
+        {
+            frmLogin signed = new frmLogin();
+            SqlConnection account = new SqlConnection(@"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=C:\TeamDev\Socialite\Socialite\Socialite\SocialiteDB.mdf;Integrated Security=True;Connect Timeout=30");
+            account.Open();
+
+            if (lblCheck.ForeColor == System.Drawing.Color.Green && lblEmailCheck.ForeColor == System.Drawing.Color.Green)
+            {
+                SqlCommand add = new SqlCommand("Insert into Accounts(Username, Password, First_Name, Last_Name, Email) Values('" + txtUsername.Text + "', '" + txtPassword.Text + "' ,  '" + txtEmail.Text + "' , '" + txtFirstName.Text + "' , '" + txtLastName.Text + "')", account);
+                add.ExecuteNonQuery();
+                account.Close();
+                this.Hide();
+                signed.Show();
+            }
+            else
+            {
+                MessageBox.Show("Please, choose different Username or Email");
+            }
+        }
+
+        private void lnkBack_Click(object sender, EventArgs e)
+        {
+            frmLogin log = new frmLogin();
             this.Close();
+            log.Show();
         }
     }
 }

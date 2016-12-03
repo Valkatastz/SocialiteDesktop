@@ -1,4 +1,5 @@
-﻿using System;
+﻿using MetroFramework.Forms;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -10,7 +11,7 @@ using System.Windows.Forms;
 
 namespace Socialite
 {
-    public partial class frmAccount : Form
+    public partial class frmAccount : MetroForm
     {
         public frmAccount()
         {
@@ -22,11 +23,16 @@ namespace Socialite
 
         }
 
-        private void logOutToolStripMenuItem_Click(object sender, EventArgs e)
+        private void metroPanel4_Paint(object sender, PaintEventArgs e)
         {
-            frmLogin logout = new frmLogin();
+           
+        }
+
+        private void lnkLogOut_Click(object sender, EventArgs e)
+        {
+            frmLogin signout = new frmLogin();
             this.Close();
-            logout.Show();            
+            signout.Show();
         }
     }
 }
