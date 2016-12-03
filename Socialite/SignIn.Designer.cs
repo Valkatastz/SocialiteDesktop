@@ -34,8 +34,8 @@
             this.btnLogin = new MetroFramework.Controls.MetroButton();
             this.btnRegister = new MetroFramework.Controls.MetroButton();
             this.Panel1 = new MetroFramework.Controls.MetroPanel();
-            this.metroLabel1 = new MetroFramework.Controls.MetroLabel();
             this.lblTitle = new MetroFramework.Controls.MetroLabel();
+            this.metroLabel1 = new MetroFramework.Controls.MetroLabel();
             this.Panel1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -152,6 +152,18 @@
             this.Panel1.VerticalScrollbarHighlightOnWheel = false;
             this.Panel1.VerticalScrollbarSize = 10;
             // 
+            // lblTitle
+            // 
+            this.lblTitle.AutoSize = true;
+            this.lblTitle.FontSize = MetroFramework.MetroLabelSize.Tall;
+            this.lblTitle.FontWeight = MetroFramework.MetroLabelWeight.Bold;
+            this.lblTitle.Location = new System.Drawing.Point(79, 39);
+            this.lblTitle.Name = "lblTitle";
+            this.lblTitle.Size = new System.Drawing.Size(202, 25);
+            this.lblTitle.TabIndex = 13;
+            this.lblTitle.Text = "Socialite Login System";
+            this.lblTitle.Theme = MetroFramework.MetroThemeStyle.Dark;
+            // 
             // metroLabel1
             // 
             this.metroLabel1.AutoSize = true;
@@ -164,18 +176,6 @@
             this.metroLabel1.TabIndex = 14;
             this.metroLabel1.Text = "Socialite 2016 - DMU Team Development Undergraduate Final Year Project";
             this.metroLabel1.Theme = MetroFramework.MetroThemeStyle.Dark;
-            // 
-            // lblTitle
-            // 
-            this.lblTitle.AutoSize = true;
-            this.lblTitle.FontSize = MetroFramework.MetroLabelSize.Tall;
-            this.lblTitle.FontWeight = MetroFramework.MetroLabelWeight.Bold;
-            this.lblTitle.Location = new System.Drawing.Point(79, 39);
-            this.lblTitle.Name = "lblTitle";
-            this.lblTitle.Size = new System.Drawing.Size(202, 25);
-            this.lblTitle.TabIndex = 13;
-            this.lblTitle.Text = "Socialite Login System";
-            this.lblTitle.Theme = MetroFramework.MetroThemeStyle.Dark;
             // 
             // frmLogin
             // 
